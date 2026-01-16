@@ -3,6 +3,7 @@ version: '3.8'
 services:
   backend:
     build: ./backend
+    image: 484907501702.dkr.ecr.ap-south-1.amazonaws.com/tuteduce_ec2:backend-latest
     container_name: backend
     ports:
       - "5000:5000"
@@ -11,6 +12,7 @@ services:
 
   frontend:
     build: ./frontend
+    image: 484907501702.dkr.ecr.ap-south-1.amazonaws.com/tuteduce_ec2:frontend-latest
     container_name: frontend
     ports:
       - "3000:3000"
